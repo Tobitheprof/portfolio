@@ -13,7 +13,7 @@
   --default-color-rgb: 33, 37, 41;
   --primary-color: #e84545;
   --primary-color-rgb: 232, 69, 69;
-  --secondary-color: #32353a;
+  --secondary-color: #f6f6f6;
   --secondary-color-rgb: 50, 53, 58;
   --contrast-color: #ffffff;
   --contrast-color-rgb: 255, 255, 255;
@@ -175,27 +175,29 @@ section {
 }
 
 .header .logo span {
-  color: var(--primary-color);
-  font-size: 24px;
-  font-weight: 600;
-  padding-left: 3px;
+    color: #6A44C3; 
+    background-image: -webkit-linear-gradient(0deg, #6A44C3 44%, #9567D7 63%, #B874B7 82%); 
+    background-clip: text; 
+    -webkit-background-clip: text; 
+    text-fill-color: transparent; 
+    -webkit-text-fill-color: transparent;    
 }
 
 .header .btn-getstarted,
 .header .btn-getstarted:focus {
   color: var(--contrast-color);
-  background: var(--primary-color);
+  background: #7563df;
   font-size: 14px;
   padding: 8px 26px;
   margin: 0;
   border-radius: 4px;
-  transition: 0.3s;
+  transition: 0.2s;
 }
 
 .header .btn-getstarted:hover,
 .header .btn-getstarted:focus:hover {
   color: var(--contrast-color);
-  background: rgba(var(--primary-color-rgb), 0.85);
+  background: #6a55e0;
 }
 
 @media (max-width: 1200px) {
@@ -250,7 +252,7 @@ section {
 .index-page.scrolled .header {
   --background-color: #1C1F23;
   --secondary-color: #444444;
-  --nav-color: #444444;
+  --nav-color: #fff;
   --nav-hover-color: #d83535;
 }
 
@@ -277,7 +279,7 @@ section {
 
   .navmenu a,
   .navmenu a:focus {
-    color: var(--nav-color);
+    color: #e0dede;
     padding: 18px 15px;
     font-size: 16px;
     font-family: var(--nav-font);
@@ -304,8 +306,16 @@ section {
   .navmenu li:hover>a,
   .navmenu .active,
   .navmenu .active:focus {
-    color: var(--nav-hover-color);
-  }
+    
+    color: #6A44C3; 
+    background-image: -webkit-linear-gradient(0deg, #6A44C3 44%, #9567D7 63%, #B874B7 82%); 
+    background-clip: text; 
+    -webkit-background-clip: text; 
+    text-fill-color: transparent; 
+    -webkit-text-fill-color: transparent;
+          
+        
+    }
 
   .navmenu .dropdown ul {
     margin: 0;
@@ -873,4 +883,13 @@ section {
   .hero p {
     font-size: 18px;
   }
+}
+
+span {
+  color: #6A44C3; 
+  background-image: -webkit-linear-gradient(0deg, #6A44C3 44%, #9567D7 63%, #B874B7 82%); 
+  background-clip: text; 
+  -webkit-background-clip: text; 
+  text-fill-color: transparent; 
+  -webkit-text-fill-color: transparent;        
 }
