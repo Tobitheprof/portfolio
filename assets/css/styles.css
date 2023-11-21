@@ -311,7 +311,7 @@ section {
 ------------------------------*/
 .index-page.scrolled .header {
   --background-color: #1C1F23;
-  --secondary-color: #444444;
+  --secondary-color: #fff;
   --nav-color: #fff;
   --nav-hover-color: #d83535;
 }
@@ -965,7 +965,7 @@ span {
 # Sections & Section Header
 --------------------------------------------------------------*/
 section {
-  padding: 80px 0;
+  padding: 60px 0;
   overflow: hidden;
 }
 
@@ -999,7 +999,7 @@ section {
 .section-header span {
   position: absolute;
   top: 46px;
-  color: rgba(14, 29, 52, 0.06);
+  color: #fff;
   left: 0;
   right: 0;
   z-index: 1;
@@ -1027,5 +1027,5 @@ section {
 }
 
 .sections-bg{
-  background: #131417;
+  background: #212227;
 }
