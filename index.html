@@ -7,7 +7,7 @@
     <!-- FONT FILES -->
     <link href="https://fonts.googleapis.com" rel="preconnect">
     <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
 
     <!-- CSS FILES(VENDOR) -->
     <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -21,7 +21,7 @@
 
     <title>Homepage | Oluwatobi Ekundayo</title>
 </head>
-<body>
+<body class="index-page" data-bs-spy="scroll" data-bs-target="#navmenu">
     <!-- ======= Header ======= -->
   <header id="header" class="header fixed-top d-flex align-items-center">
     <div class="container-fluid d-flex align-items-center justify-content-between">
@@ -64,7 +64,7 @@
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav><!-- End Nav Menu -->
 
-      <a class="btn-getstarted" href="index.html#about">Download Resume</a>
+      <a class="button-56" role="button">Contact Me</a>
 
     </div>
   </header><!-- End Header -->
@@ -75,7 +75,7 @@
     <!-- Hero Section - Home Page -->
     <section id="hero" class="hero">
 
-      <img src="https://img.freepik.com/free-photo/abstract-luxury-blur-dark-grey-black-gradient-used-as-background-studio-wall-display-your-products_1258-54552.jpg?w=2000&t=st=1700569689~exp=1700570289~hmac=052de45a1a4eaf75afc5846501a14661b6d127c4aa253b87050a83db247ed6ef" alt="" data-aos="fade-in">
+      <!-- <img src="https://img.freepik.com/free-vector/stream-binary-code-design-vector_53876-164425.jpg?w=2000&t=st=1700572788~exp=1700573388~hmac=de6b6c907f25738091c51d3fbc516331a7932aacc2fb2d3d284806a797047947" alt="" data-aos="fade-in"> -->
 
       <div class="container">
         <div class="row">
@@ -83,6 +83,7 @@
             <p class="lead" data-aos="fade-up" data-aos-delay="100">Hi, I'm <span>&lt;&#47;</span>Oluwatobi Ekundayo<span>&#47;&gt;</span></p>
             <h2 data-aos="fade-up" data-aos-delay="200">I am a <span>FullStack</span> Developer</h2>
             <p data-aos="fade-up" data-aos-delay="300">I am a highly experienced software developer with a passion for building scalable and efficient web applications with over 5 years of hands-on experience</p>
+            <button class="button-56 mt-2 fw-bold" data-aos="fade-up" data-aos-delay="400">About Me</button>
           </div>
         </div>
       </div>
@@ -90,15 +91,33 @@
     </section><!-- End Hero Section -->
 
 
+    <section id="about" class="about sections-bg">
+      <div class="container">
+        <div class="section-header">
+          <span>About Me</span>
+          <h2>About Me</h2>
+        </div>
+      </div>
+    </section>
+
+
 
 
   </main>
 
+  <!-- Preloader -->
+  <div id="preloader">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
     
-    
+  <!-- Scroll Top Button -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
 
-    
+  
   <!-- Vendor JS Files -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
