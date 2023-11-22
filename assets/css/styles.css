@@ -41,7 +41,8 @@
   border: 2px solid #111;
   border-radius: 8px;
   box-sizing: border-box;
-  color: #111;
+  color: #cccbcb;
+  text-shadow: 0.1;
   cursor: pointer;
   display: flex;
   font-family: Poppins,sans-serif;
@@ -57,6 +58,7 @@
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
+  transition: transform .2s ease-out;
 }
 
 .button-56:after {
@@ -85,6 +87,8 @@
 
 .button-56:hover {
   outline: 0;
+  background: #603fad;
+  color: #fff;
 }
 
 @media (min-width: 768px) {
@@ -1029,3 +1033,11 @@ section {
 .sections-bg{
   background: #212227;
 }
+
+/* ABOUT SECTION STYLES START */
+.about p{
+  color: #b1b0b0 !important;
+}
+
+
+/* ABOUT SECTION STYLES END */
