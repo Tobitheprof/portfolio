@@ -35,67 +35,6 @@
 }
 
 
-.button-56 {
-  align-items: center;
-  background-color: #7563df;
-  border: 2px solid #111;
-  border-radius: 8px;
-  box-sizing: border-box;
-  color: #cccbcb;
-  text-shadow: 0.1;
-  cursor: pointer;
-  display: flex;
-  font-family: Poppins,sans-serif;
-  font-size: 16px;
-  height: 48px;
-  justify-content: center;
-  line-height: 24px;
-  max-width: 100%;
-  padding: 0 25px;
-  position: relative;
-  text-align: center;
-  text-decoration: none;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-  transition: transform .2s ease-out;
-}
-
-.button-56:after {
-  background-color: #111;
-  border-radius: 8px;
-  content: "";
-  display: block;
-  height: 48px;
-  left: 0;
-  width: 100%;
-  position: absolute;
-  top: -2px;
-  transform: translate(8px, 8px);
-  transition: transform .2s ease-out;
-  z-index: -1;
-}
-
-.button-56:hover:after {
-  transform: translate(0, 0);
-}
-
-.button-56:active {
-  background-color: #ffdeda;
-  outline: 0;
-}
-
-.button-56:hover {
-  outline: 0;
-  background: #603fad;
-  color: #fff;
-}
-
-@media (min-width: 768px) {
-  .button-56 {
-    padding: 0 40px;
-  }
-}
 
 
 /*--------------------------------------------------------------
@@ -940,10 +879,7 @@ section {
   background-color: rgba(var(--primary-color-rgb), 0.9);
 }
 
-.hero .btn .btn-custom{
 
-
-}
 
 @media (max-width: 768px) {
   .hero h2 {
@@ -955,7 +891,16 @@ section {
   }
 }
 
-span {
+.hero span {
+  color: #6A44C3; 
+  background-image: -webkit-linear-gradient(0deg, #6A44C3 38%, #9567D7 96%, #B874B7 100%);
+  background-clip: text; 
+  -webkit-background-clip: text; 
+  text-fill-color: transparent; 
+  -webkit-text-fill-color: transparent;        
+}
+
+.about span {
   color: #6A44C3; 
   background-image: -webkit-linear-gradient(0deg, #6A44C3 38%, #9567D7 96%, #B874B7 100%);
   background-clip: text; 
@@ -1003,14 +948,28 @@ section {
 .section-header span {
   position: absolute;
   top: 46px;
-  color: #fff;
+  color: #232324 !important;
   left: 0;
   right: 0;
   z-index: 1;
   font-weight: 700;
-  font-size: 56px;
+  font-size: 46px;
   text-transform: uppercase;
   line-height: 0;
+}
+
+.section-header h2:after {
+  content: "";
+  position: absolute;
+  text-align: start;
+  /* display: block; */
+  width: 50px;
+  height: 3px;
+  background: #603fad;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  /* margin: auto; */
 }
 
 .section-header p {
@@ -1033,11 +992,142 @@ section {
 .sections-bg{
   background: #212227;
 }
+.sections-bg2{
+  background: #1C1F23;
+}
+
 
 /* ABOUT SECTION STYLES START */
+
+
 .about p{
   color: #b1b0b0 !important;
 }
 
 
 /* ABOUT SECTION STYLES END */
+
+
+
+/* ======================================= */
+
+
+/* MY SKILLS START */
+
+.services .box {
+  padding: 50px 30px;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  transition: all ease-in-out 0.3s;
+  height: 100%;
+  background: #252729;
+  border-radius: 10px;
+}
+
+.services .box span {
+  display: block;
+  font-size: 40px;
+  font-weight: 700;
+  color: #cccbcb;
+}
+
+.services .box span i{
+  display: block;
+  font-size: 40px;
+  font-weight: 700;
+  color: #7563df;
+}
+
+.services .box h4 {
+  font-size: 24px;
+  font-weight: 600;
+  padding: 0;
+  margin: 20px 0;
+  color: #cccbcb;
+}
+
+.services .box p {
+  color: #aaaaaa;
+  font-size: 15px;
+  margin: 0;
+  padding: 0;
+}
+
+.services .box:hover {
+  background: #6A44C3;
+  padding: 30px 30px 70px 30px;
+  box-shadow: 10px 15px 30px rgba(0, 0, 0, 0.18);
+}
+
+.services .box:hover span i,
+.services .box:hover h4,
+.services .box:hover p {
+  color: #fff !important;
+}
+
+
+/* MY SKILLS END */
+
+
+/* GENERAL BUTTON STYLES START */
+.button-56 {
+  align-items: center;
+  background-color: #7563df;
+  border: 2px solid #000000;
+  border-radius: 8px;
+  box-sizing: border-box;
+  color: #cccbcb;
+  text-shadow: 0.1;
+  cursor: pointer;
+  display: flex;
+  font-family: Poppins, sans-serif;
+  font-size: 16px;
+  height: 48px;
+  justify-content: center;
+  line-height: 24px;
+  max-width: 100%;
+  padding: 0 25px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation !important;
+  transition: transform .2s ease-out;
+}
+
+.button-56:after {
+  background-color: #111 !important;
+  border-radius: 8px;
+  content: "";
+  display: block;
+  height: 48px;
+  left: 0;
+  width: 100%;
+  position: absolute !important;
+  top: -2px !important;
+  transform: translate(8px, 8px) !important;
+  transition: transform .2s ease-out;
+  z-index: -1 !important;
+}
+
+.button-56:hover:after {
+  transform: translate(0, 0) !important; 
+}
+
+.button-56:active {
+  background-color: #ffdeda;
+  outline: 0;
+}
+
+.button-56:hover {
+  outline: 0;
+  background: #603fad !important;
+  color: #fff;
+}
+
+@media (min-width: 768px) {
+  .button-56 {
+    padding: 0 40px;
+  }
+}
+/* GENERAL BUTTON STYLES END */
