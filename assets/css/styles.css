@@ -186,6 +186,15 @@ section {
     -webkit-text-fill-color: transparent;    
 }
 
+h2 span {
+  color: #6A44C3; 
+  background-image: -webkit-linear-gradient(0deg, #6A44C3 38%, #9567D7 96%, #B874B7 100%);
+  background-clip: text; 
+  -webkit-background-clip: text; 
+  text-fill-color: transparent; 
+  -webkit-text-fill-color: transparent;    
+}
+
 .header .btn-getstarted,
 .header .btn-getstarted:focus {
   color: var(--contrast-color);
@@ -1075,13 +1084,13 @@ section {
   font-weight: 700;
   margin-top: 20px;
   margin-bottom: 20px;
-  color: #45505b;
+  color: #cccbcb;
 }
 
 .resume .resume-item {
   padding: 0 0 20px 20px;
   margin-top: -2px;
-  border-left: 2px solid #0563bb;
+  border-left: 2px solid #7563df;
   position: relative;
 }
 
@@ -1091,17 +1100,21 @@ section {
   font-weight: 600;
   text-transform: uppercase;
   font-family: "Poppins", sans-serif;
-  color: #0563bb;
+  color: #7563df;
   margin-bottom: 10px;
 }
 
 .resume .resume-item h5 {
   font-size: 16px;
-  background: #f7f8f9;
+  background: #1C1F23;
   padding: 5px 15px;
   display: inline-block;
   font-weight: 600;
   margin-bottom: 10px;
+}
+
+.resume .resume-item p {
+  color: #fff;
 }
 
 .resume .resume-item ul {
@@ -1110,6 +1123,7 @@ section {
 
 .resume .resume-item ul li {
   padding-bottom: 10px;
+  color: #fff;
 }
 
 .resume .resume-item:last-child {
@@ -1124,8 +1138,8 @@ section {
   border-radius: 50px;
   left: -9px;
   top: 0;
-  background: #fff;
-  border: 2px solid #0563bb;
+  background: #1C1F23;
+  border: 2px solid #7563df;
 }
 
 
