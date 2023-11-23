@@ -5,6 +5,7 @@
   --nav-font: "Poppins", sans-serif;
 }
 
+
 /* Global Colors */
 :root {
   --background-color: #ffffff;
@@ -34,6 +35,9 @@
   scroll-behavior: smooth;
 }
 
+body{
+  background: #1C1F23 !important;
+}
 
 
 
@@ -1222,7 +1226,7 @@ section {
   --background-color-rgb: #1C1F23;
   /* width: 100%; */
   /* min-height: 100vh; */
-  position: relative;
+  /* position: relative; */
   padding: 160px 0 80px 0;
   display: flex;
   align-items: center;
@@ -1238,7 +1242,7 @@ section {
   -o-object-fit: cover;
   object-fit: cover;
   z-index: 1;
-  filter: blur(10px);
+  filter: blur(100px);
 }
 
 .projects:before {
