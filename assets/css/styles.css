@@ -571,7 +571,7 @@ section {
   right: 15px;
   bottom: 15px;
   z-index: 99999;
-  background-color: var(--primary-color);
+  background-color: #6a55e0;
   width: 40px;
   height: 40px;
   border-radius: 4px;
@@ -585,7 +585,7 @@ section {
 }
 
 .scroll-top:hover {
-  background-color: rgba(var(--primary-color-rgb), 0.8);
+  background-color: #603fad;
   color: #ffffff;
 }
 
@@ -1209,3 +1209,125 @@ section {
   }
 }
 /* GENERAL BUTTON STYLES END */
+
+/* PROJECT START */
+
+
+/* Hero Section - Home Page
+------------------------------*/
+.projects {
+  --default-color: #ffffff;
+  --default-color-rgb: 255, 255, 255;
+  --background-color: #20252b;
+  --background-color-rgb: #1C1F23;
+  /* width: 100%; */
+  /* min-height: 100vh; */
+  position: relative;
+  padding: 160px 0 80px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.projects img {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  z-index: 1;
+  filter: blur(10px);
+}
+
+.projects:before {
+  content: "";
+  background: rgba(var(--background-color-rgb), 0.5);
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+}
+
+.projects .container {
+  position: relative;
+  z-index: 3;
+}
+
+.projects h2 {
+  color: var(--contrast-color);
+  margin: 0;
+  font-size: 44px;
+  font-weight: 700;
+}
+
+.projects p {
+  color: rgba(var(--default-color-rgb), 0.8);
+  margin: 5px 0 0 0;
+  font-size: 20px;
+}
+
+.projects .sign-up-form {
+  margin-top: 20px;
+  padding: 10px;
+  border-radius: 7px;
+  background: #fff;
+  box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.1);
+}
+
+.projects .sign-up-form .form-control {
+  border: none;
+}
+
+.projects .sign-up-form .form-control:active,
+.projects .sign-up-form .form-control:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.projects .sign-up-form input[type=submit] {
+  box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.2);
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  padding: 8px 20px 10px 20px;
+  border-radius: 7px;
+  color: var(--contrast-color);
+}
+
+.projects .sign-up-form input[type=submit]:hover {
+  background-color: rgba(var(--primary-color-rgb), 0.9);
+}
+
+
+
+@media (max-width: 768px) {
+  .projects h2 {
+    font-size: 32px;
+  }
+
+  .projects p {
+    font-size: 18px;
+  }
+}
+
+.projects span {
+  color: #6A44C3; 
+  background-image: -webkit-linear-gradient(0deg, #6A44C3 38%, #9567D7 96%, #B874B7 100%);
+  background-clip: text; 
+  -webkit-background-clip: text; 
+  text-fill-color: transparent; 
+  -webkit-text-fill-color: transparent;        
+}
+
+.about span {
+  color: #6A44C3; 
+  background-image: -webkit-linear-gradient(0deg, #6A44C3 38%, #9567D7 96%, #B874B7 100%);
+  background-clip: text; 
+  -webkit-background-clip: text; 
+  text-fill-color: transparent; 
+  -webkit-text-fill-color: transparent;        
+}
+
+
+
+/* PROJECTS END */
