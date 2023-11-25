@@ -861,6 +861,19 @@ section {
   font-size: 20px;
 }
 
+section h2 {
+  color: var(--contrast-color);
+  margin: 0;
+  font-size: 44px;
+  font-weight: 700;
+}
+
+.section p {
+  color: rgba(var(--default-color-rgb), 0.8);
+  margin: 5px 0 0 0;
+  font-size: 20px;
+}
+
 .hero .sign-up-form {
   margin-top: 20px;
   padding: 10px;
@@ -900,6 +913,16 @@ section {
   }
 
   .hero p {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 768px) {
+  section h2 {
+    font-size: 32px;
+  }
+
+  section p {
     font-size: 18px;
   }
 }
@@ -1342,68 +1365,63 @@ section {
 /*--------------------------------------------------------------
 # Contact
 --------------------------------------------------------------*/
-.contact .contact-about h3 {
-  font-size: 36px;
-  margin: 0 0 10px 0;
+.contact .info-box {
+  color: #444444;
+  padding: 20px;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.contact .info-box i.bx {
+  font-size: 24px;
+  color: #7563df;
+  border-radius: 50%;
+  padding: 14px;
+  float: left;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.contact .info-box h3 {
+  font-size: 20px;
+  color: #fff;
+  font-weight: 700;
+  margin: 10px 0 8px 68px;
+}
+
+.contact .info-box p {
   padding: 0;
-  line-height: 1;
-  font-weight: 300;
-  letter-spacing: 3px;
-  text-transform: uppercase;
-  color: #d43076;
-}
-
-.contact .contact-about p {
-  font-size: 14px;
+  color: #fff;
   line-height: 24px;
-  font-family: "Poppins", serif;
-  color: #cccbcb;
+  font-size: 14px;
+  margin: 0 0 0 68px;
 }
 
-.contact .social-links {
-  padding-bottom: 20px;
+.contact .info-box .social-links {
+  margin: 5px 0 0 68px;
+  display: flex;
 }
 
-.contact .social-links a {
+.contact .info-box .social-links a {
   font-size: 18px;
   display: inline-block;
-  background: #1C1F23;
-  color: #7563df;
-  line-height: 0;
-  padding: 8px 0;
-  margin-right: 4px;
-  border-radius: 50%;
-  text-align: center;
-  width: 36px;
-  height: 36px;
-  transition: 0.3s;
-  border: 1px solid #6a55e0;
-}
-
-.contact .social-links a:hover {
-  background: #7563df;
   color: #fff;
+  line-height: 1;
+  margin-right: 12px;
+  transition: 0.3s;
 }
 
-.contact .info {
-  color: #5a656e;
-}
-
-.contact .info i {
-  font-size: 32px;
+.contact .info-box .social-links a:hover {
   color: #7563df;
-  line-height: 0;
-  margin-right: 15px;
 }
 
-.contact .info p {
-  font-size: 14px;
-  margin: 0;
+.contact .php-email-form {
+  padding: 30px;
+  background: rgba(255, 255, 255, 0.08);
 }
 
 .contact .php-email-form .error-message {
   display: none;
-  color: #fff;
+  background: rgba(255, 255, 255, 0.08);
   background: #ed3c0d;
   text-align: left;
   padding: 15px;
@@ -1416,7 +1434,7 @@ section {
 
 .contact .php-email-form .sent-message {
   display: none;
-  color: #fff;
+  background: rgba(255, 255, 255, 0.08);
   background: #18d26e;
   text-align: center;
   padding: 15px;
@@ -1425,7 +1443,7 @@ section {
 
 .contact .php-email-form .loading {
   display: none;
-  background: #fff;
+  background: rgba(255, 255, 255, 0.08);
   text-align: center;
   padding: 15px;
 }
@@ -1447,29 +1465,38 @@ section {
   border-radius: 0;
   box-shadow: none;
   font-size: 14px;
-  border-color: 3px solid #7563df;
-  background: #1C1F23;
-  color: #cccbcb !important;
-
+  background: rgba(255, 255, 255, 0.08);
+  border: 0;
+  transition: 0.3s;
+  color: #fff;
 }
 
 .contact .php-email-form input:focus,
 .contact .php-email-form textarea:focus {
-  border-color: 3px solid #7563df;
+  background-color: rgba(255, 255, 255, 0.11);
+  border: 1px solid #7563df;
 }
 
-/* .contact .php-email-form button[type=submit] {
-  background: #d43076;
-  border: 0;
-  padding: 10px 24px;
-  color: #fff;
-  transition: 0.4s;
-  border-radius: 50px;
-} */
+.contact .php-email-form input::-moz-placeholder,
+.contact .php-email-form textarea::-moz-placeholder {
+  color: rgba(255, 255, 255, 0.3);
+  opacity: 1;
+}
 
-/* .contact .php-email-form button[type=submit]:hover {
-  background: #dd5a92;
-} */
+.contact .php-email-form input::placeholder,
+.contact .php-email-form textarea::placeholder {
+  color: rgba(255, 255, 255, 0.3);
+  opacity: 1;
+}
+
+.contact .php-email-form input {
+  padding: 10px 15px;
+}
+
+.contact .php-email-form textarea {
+  padding: 12px 15px;
+}
+
 
 @keyframes animate-loading {
   0% {
