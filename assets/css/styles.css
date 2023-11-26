@@ -919,11 +919,11 @@ section h2 {
 
 @media (max-width: 768px) {
   section h2 {
-    font-size: 32px;
+    font-size: 32px !important;
   }
 
   section p {
-    font-size: 18px;
+    font-size: 16px !important;
   }
 }
 
@@ -1233,6 +1233,7 @@ section {
 @media (min-width: 768px) {
   .button-56 {
     padding: 0 40px;
+    font-size: sma;
   }
 }
 /* GENERAL BUTTON STYLES END */
