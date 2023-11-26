@@ -23,10 +23,8 @@
 /* Nav Menu Colors */
 :root {
   --nav-color: #3a3939;
-  --nav-hover-color: #e84545;
-  --nav-dropdown-color: #3a3939;
-  --nav-dropdown-hover-color: #e84545;
-  --nav-dropdown-background-color: #1C1F23;
+  --nav-dropdown-color: #fff;
+  --nav-dropdown-background-color: #111418;
   --nav-mobile-background-color: #1C1F23;
 }
 
@@ -470,7 +468,7 @@ section {
 
   .navmenu a,
   .navmenu a:focus {
-    color: var(--nav-dropdown-color);
+    color: #fff;
     padding: 10px 20px;
     font-family: var(--nav-font);
     font-size: 17px;
@@ -494,19 +492,19 @@ section {
     justify-content: center;
     border-radius: 50%;
     transition: 0.3s;
-    background-color: rgba(var(--primary-color-rgb), 0.1);
+    background-color: #000;
   }
 
   .navmenu a i:hover,
   .navmenu a:focus i:hover {
-    background-color: var(--primary-color);
+    background-color: #6A44C3;
     color: var(--contrast-color);
   }
 
   .navmenu a:hover,
   .navmenu .active,
   .navmenu .active:focus {
-    color: var(--nav-dropdown-hover-color);
+    color: #6A44C3;
   }
 
   .navmenu .active i,
