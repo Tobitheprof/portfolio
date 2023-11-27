@@ -11,11 +11,11 @@
 
     <!-- CSS FILES(VENDOR) -->
     <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.min.css" rel="stylesheet">
     <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
     <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
     <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="assets/vendor/boxicons-2.1.4/css/boxicons.css">
+    <link rel="stylesheet" href="assets/vendor/boxicons-2.1.4/css/boxicons.min.css">
     <link
         rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
@@ -43,17 +43,11 @@
         <ul>
           <li><a href="index.html#hero" class="active">Home</a></li>
           <li><a href="index.html#about">About</a></li>
-          <li><a href="index.html#services">Skills</a></li>
+          <li><a href="index.html#skills">Skills</a></li>
           <li><a href="index.html#resume">Resume</a></li>
           <li><a href="index.html#projects">Projects</a></li>
+          <li><a href="index.html#services">Services</a></li>
           <li><a href="index.html#contact">Contact</a></li>
-          <li class="dropdown has-dropdown"><a href="#"><span>Explore</span> <i class="bi bi-chevron-down"></i></a>
-            <ul class="dd-box-shadow">
-              <li><a href="#">Blog</a></li>
-              <li><a href="#">Learning</a></li>
-              <li><a href="#">Random Stuff</a></li>
-            </ul>
-          </li>
         </ul>
 
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
@@ -98,12 +92,12 @@
           <div class="col-lg-8 order-md-1" data-aos="fade-left" data-aos-delay="300">
             <h6 class="fw-bold">About Me</h6>
             <h1 class="fw-bold">Oluwatobi <span>Ekundayo</span></h1>
-            <p class="">Hi there, I am <span>Oluwatobi Ekundayo</span>, professionally, I'm a fullstack web developer, automation expert, web scraper, technical writer, data analyst and tutor.</p>
-            <p class="">As it stands, I am a second year student of Ahmadu Bello University, Zaria where I major in Computer Engineering.</p>
-            <p class="">With over five years of hands-on experience and expertise, I have worked on projects that span across different horizons such as medicine, agriculture, trasportation, education, marketing, math, science, finance and even electornics</p>
-            <p class="">As a software engineer my stack is primarily made up of Python and Javascript. I have worked with most of mainstream tools which </p>
-            <p class="">You can learn more about my stack by taking a look at my GitHub profile. Click the button below to do so</p>
-            <button class="btn-getstarted mt-2 fw-bold">About Me</button>
+            <p>Hello there, I'm Oluwatobi Ekundayo.</p>
+            <p>Professionally, I'm a fullstack web developer, web scraper, automation expert, data scientist, AI & ML Engineer and a technical writer.</p>
+            <p>I'm also a second year student at Ahmadu Bello University where I major in Computer Engineering.</p>
+            <p>Besides that, I'm a pretty simple guy, who loves to watch anime, football(proud Chelsea fan ^_^) and cartoons. I also love reading books with my favorite authors being Khalil Gibran and Charles Dickens. I like reading Shakespear but not as much as those two right there. To coomplete the equation, I also love reading manga and comics(I'm a DC fanboy :) )</p>
+            <p>To find more about me, you can simple take a look at my skills</p>
+            <a class="btn-getstarted mt-2 fw-bold" href="#skills" style="width: fit-content;">My Skills</a>
           </div>
         </div>
       </div>
@@ -112,7 +106,7 @@
 
     <!-- My Skills Section Start -->
 
-    <section id="services" class="services sections-bg2">
+    <section id="skills" class="services sections-bg2">
 
       <div class="container">
         <p class="fw-bold" style="color: #cccbcb;" data-aos="fade-right" data-aos-delay="200">What can I do?</p>
@@ -359,10 +353,7 @@
 
     <!-- MY Resume End -->
 
-
-
     <!-- My Projects Start -->
-
     <section id="projects" class="projects">
 
       <img src="assets/img/abstract-textured-backgound.jpg" alt="" data-aos="fade-in">
@@ -379,10 +370,136 @@
       </div>
   
     </section>
-    
-    
-
     <!-- My Projects End -->
+
+
+    <!-- My Services Start -->
+
+    <section id="services" class="services sections-bg">
+
+      <div class="container">
+        <p class="fw-bold" style="color: #cccbcb;" data-aos="ease-in" data-aos-delay="200">What do I offer?</p>
+        <h2 class="fw-bold mb-3" data-aos="fade-left" data-aos-delay="300">My <span>Services</span></h2>
+        <p style="color: #fff;" data-aos="fade-down" data-aos-delay="400">In order to keep up with the times and stay afloat in today's economy, I offer alot of services that are centered around the IT space. You can check them out below and contact me for a quote</p>
+
+
+        <div class="row gy-4">
+
+          <div class="col-lg-6 " data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item d-flex">
+              <div class="icon flex-shrink-0"><i class="bi bi-globe"></i></div>
+              <div>
+                <h4 class="title"><a href="services-details.html" class="stretched-link">Web Development</a></h4>
+                <p class="description">Offering both frontend and backend development services, I can help build your websites and web applications using the best techniques in the game.</p>
+                <p class="description">So far as it's a web based, then I can build it.</p>
+              </div>
+            </div>
+          </div>
+          <!-- End Service Item -->
+
+          <div class="col-lg-6 " data-aos="fade-up" data-aos-delay="200">
+            <div class="service-item d-flex">
+              <div class="icon flex-shrink-0"><i class="bi bi-robot"></i></div>
+              <div>
+                <h4 class="title"><a href="services-details.html" class="stretched-link">Chat Bot Development</a></h4>
+                <p class="description">With the aid of deep learning frameworks, I can help you build chat bots that can serve many different purposes, from digital assitants to tailored uses such as the automation of tasks like email sending, appointment booking and many more.</p>
+              </div>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-6 " data-aos="fade-up" data-aos-delay="300">
+            <div class="service-item d-flex">
+              <div class="icon flex-shrink-0"><i class="bi bi-cart"></i></div>
+              <div>
+                <h4 class="title"><a href="services-details.html" class="stretched-link">E-Commerce Development</a></h4>
+                <p class="description">To help your business stay relevant as the world evolves, I offer the development of ecommerce applications that can be used to help you take your business to new audiences and help you keep your exiting customers as well</p>
+                <p>My ecommerce services comes with management tools and free maintanance within the first month of the acquiring my services</p>
+              </div>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-6 " data-aos="fade-up" data-aos-delay="400">
+            <div class="service-item d-flex">
+              <div class="icon flex-shrink-0"><i class="bi bi-clipboard"></i></div>
+              <div>
+                <h4 class="title"><a href="services-details.html" class="stretched-link">E-management Systems Development</a></h4>
+                <p class="description">The world's already shifted from the era of snail mail to the point where everything is now done online.</p>
+                <p class="description">This shift means modes and methods of management have shifted as well. Using my technical expertise, I can help you build management systems for learning, inventory, hotel, finance, school, laboratory and hospital management systems.</p>
+              </div>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-6 " data-aos="fade-up" data-aos-delay="500">
+            <div class="service-item d-flex">
+              <div class="icon flex-shrink-0"><i class="bi bi-send"></i></div>
+              <div>
+                <h4 class="title"><a href="services-details.html" class="stretched-link">Web Scraping</a></h4>
+                <p class="description">Data is the new oil. I can help you get your hands onn this new "oil" with my web scraping skills. From simple website scraping to full on social media scraping and even collecting a third of the data on the english internet.</p>
+              </div>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-6 " data-aos="fade-up" data-aos-delay="500">
+            <div class="service-item d-flex">
+              <div class="icon flex-shrink-0"><i class="bi bi-gear"></i></div>
+              <div>
+                <h4 class="title"><a href="services-details.html" class="stretched-link">Automation</a></h4>
+                <p class="description">Many tasks can be time consuming and inefficient as well. To counter this, you could easily automate them</p>
+                <p class="description">My automation skills are not limited in any way which means I can automate just about any task. Email creation, profile scraping, timed messaging and many more. You name it and I do it</p>
+              </div>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-6 " data-aos="fade-up" data-aos-delay="500">
+            <div class="service-item d-flex">
+              <div class="icon flex-shrink-0"><i class="bi bi-brightness-high"></i></div>
+              <div>
+                <h4 class="title"><a href="services-details.html" class="stretched-link">Troubleshooting and Maintenance</a></h4>
+                <p class="description">Every once in a while, software tend to develop fault in one way or another these faults can be fixed or prevented easily by just booking a session with me and having me take a look at things.</p>
+                <p class="description">I can also help to ensure the security of your applications and prevent breaches before they even happen</p>
+              </div>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-6 " data-aos="fade-up" data-aos-delay="600">
+            <div class="service-item d-flex">
+              <div class="icon flex-shrink-0"><i class="bi bi-person"></i></div>
+              <div>
+                <h4 class="title"><a href="services-details.html" class="stretched-link">Someone you can talk to</a></h4>
+                <p class="description">Well, everyone gets bored once in a while and need someone they can talk to.</p>
+                <p class="description">You can easily contact me and I'll be sure to reach out so you have someone to talk to. I'm a pretty fun guy who loves meeting new people so reach out, we can be friends :)</p>
+              </div>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-6 " data-aos="fade-up" data-aos-delay="600">
+            <div class="service-item d-flex">
+              <div class="icon flex-shrink-0"><i class="bi bi-person"></i></div>
+              <div>
+                <h4 class="title"><a href="services-details.html" class="stretched-link">AI Development</a></h4>
+                <p class="description">Yep, you read that right, I'm familiar with a good number of frameworks that allow me to build some pretty cool AI application that can fall into any category.</p>
+                <p class="description">And no, it's not an API call to GPT 😂, it'll be a custom AI application built from the ground up :)</p>
+              </div>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-6 " data-aos="fade-up" data-aos-delay="600">
+            <div class="service-item d-flex">
+              <div class="icon flex-shrink-0"><i class="bi bi-person"></i></div>
+              <div>
+                <h4 class="title"><a href="services-details.html" class="stretched-link">LLM Development</a></h4>
+                <p class="description">I've got some pretty solid experience with building LLMs that serve different purposes. With experience in CNNs, SVMs, NLP and Transformers, I'm the guy you want to get the job done when it comes to LLM development.</p>
+              </div>
+            </div>
+          </div><!-- End Service Item -->
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- My Services End -->
 
 
     <!-- Contact Me Start -->
